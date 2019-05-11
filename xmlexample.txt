@@ -1,0 +1,27 @@
+
+<annotation>
+  <filename>2244.png</filename>
+  <size>
+    <width>199</width>
+    <height>83</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>2</name>   \\first digit class
+    <bndbox>
+      <xmin>77</xmin>   //left most pixel of first digit class 
+      <ymin>29</ymin>   //top most pixel of first digit class 
+      <xmax>100</xmax>   /righ tmost pixel of first digit class 
+      <ymax>61</ymax>  //bottom most pixel of first digit class 
+    </bndbox>
+  </object>
+  <object>
+    <name>3</name>  //second digit class 
+    <bndbox>
+      <xmin>98</xmin>
+      <ymin>25</ymin>
+      <xmax>124</xmax>
+      <ymax>57</ymax>
+    </bndbox>
+  </object>
+</annotation>
