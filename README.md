@@ -1,32 +1,31 @@
 [![Build Status](https://travis-ci.org/penny4860/Yolo-digit-detector.svg?branch=master)](https://travis-ci.org/penny4860/Yolo-digit-detector) [![codecov](https://codecov.io/gh/penny4860/Yolo-digit-detector/branch/master/graph/badge.svg)](https://codecov.io/gh/penny4860/Yolo-digit-detector)
 
-# SVHN yolo-v2 digit detector
 
-I have implemented a digit detector that applies yolo-v2 to svhn dataset.
-
-<img src="images/svhn.png" height="600">
+I have implemented a digit detector that applies yolo-v2 to FAA Digital Gauge dataset 
 
 ## Usage for python code
 
 #### 0. Requirement
 
 * python 3.5
-* anaconda 4.4.0
-* tensorflow 1.2.1
+* tensorflow 1.8.0
 * keras 2.1.1
 * opencv 3.3.0
 * imgaug
 * Etc.
 
-I recommend that you create and use an anaconda env that is independent of your project. You can create anaconda env for this project by following these simple steps. This process has been verified on Windows 10 and ubuntu 16.04.
+I recommend that you create and use an anaconda env that is independent of your project. This is how I rant the code. You can create anaconda env for this project by following these simple steps. This process has been verified on Windows 10.
 
 ```
-$ conda create -n yolo python=3.5 anaconda=4.4.0
+$ conda create -n yolo python=3.5 
 $ activate yolo # in linux "source activate yolo"
-(yolo) $ pip install tensorflow==1.2.1
-(yolo) $ pip install keras==2.1.1
+(yolo) $ pip install tensorflow==1.8.0
+(yolo) $ pip install keras
 (yolo) $ pip install opencv-python
+(yolo) $ conda install Shapely
 (yolo) $ pip install imgaug
+(yolo) $ pip install h5py
+(yolo) $ pip install -U scikit-learn
 (yolo) $ pip install pytest-cov
 (yolo) $ pip install codecov
 (yolo) $ pip install -e .
@@ -61,27 +60,10 @@ This project provides a way to train digit detector from scratch. If you follow 
 
 Now you can add more images to train a digit detector with good generalization performance.
 
-### 3. SVHN dataset in Pascal Voc annotation format
-
-In this project, I use [pascal voc format](http://host.robots.ox.ac.uk/pascal/VOC/) as annotation information to train object detector.
-An annotation file of this format can be downloaded from [svhn-voc-annotation-format](https://github.com/penny4860/svhn-voc-annotation-format).
-
-
-## Other Results
-
-### 1. Raccoon dataset : https://github.com/experiencor/raccoon_dataset
-
-<img src="images/raccoon-12.jpg">
-
-* pretrained weight file is stored at [raccoon](https://drive.google.com/drive/folders/17Co0b5YDNVlWVfuTqygRY_U2qg8FwGmy)
-* training set evaluation (160-images)
-	* fscore / precision / recall: 0.937, 0.963, 0.913
-* test set evaluation (40-images)
-	* fscore / precision / recall: 0.631, 0.75, 0.545
-
 
 ## Copyright
 
 * See [LICENSE](LICENSE) for details.
+* This project was based off [Yolo-digit-detector](https://github.com/penny4860/Yolo-digit-detector). Some of the code was changed for the project data used. 
 * This project started at [basic-yolo-keras](https://github.com/experiencor/basic-yolo-keras). I refactored the source code structure of [basic-yolo-keras](https://github.com/experiencor/basic-yolo-keras) and added the CI test. I also applied the SVHN dataset to implement the digit detector. Thanks to the [Huynh Ngoc Anh](https://github.com/experiencor) for providing a good project as open source.
 
