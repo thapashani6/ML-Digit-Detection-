@@ -60,7 +60,7 @@ This project provides a way to train digit detector from scratch. If you follow 
 
 Now you can add more images to train a digit detector with good generalization performance.
 
-### 1. Digit Detection with weight file from project data
+### 3. Digit Detection with weight file from project data
 In this project, the weights are stored in [weights.h5](https://drive.google.com/drive/u/3/folders/1zaNtl99WdhxuVXDuIBnGQf2SxWbNYEmY). This is the weight produced by training the model with the project images. 
 ## Copyright
 
