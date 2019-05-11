@@ -51,8 +51,6 @@ This project provides a way to train digit detector from scratch. If you follow 
   * `` project/root> python train.py -c configs/from_scratch2.json ``
 * Finally, evaluate trained digit detector.
   * `` project/root> python evaluate.py -c configs/from_scratch.json -w svhn/weights.h5 ``
-  * The evaluation results are output in the following manner.
-  	* ``{'fscore': 1.0, 'precision': 1.0, 'recall': 1.0}``
   * The prediction result images are saved in the ``project/detected`` directory.
 
 <img src="images/1.png" height="150">
