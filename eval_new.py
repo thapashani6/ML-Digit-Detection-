@@ -4,7 +4,7 @@ Created on Wed Mar 27 13:02:22 2019
 
 @author: Shani
 """
-#this evaluation file runs but gets really bad outputs with weights trainged by the default images
+#this evaluation file runs the model on the two images specified in img_files
 import json
 import cv2
 from yolo.backend.utils.box import draw_scaled_boxes
@@ -29,7 +29,7 @@ for fname in img_files:
     plt.imshow(img)
     plt.show()
 
-THRESHOLD = 0.3
+THRESHOLD = 0.06
 for img in imgs:
     boxes, probs = yolo_detector.predict(img, THRESHOLD)
 
